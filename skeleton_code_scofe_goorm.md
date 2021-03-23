@@ -1,7 +1,7 @@
 ```js
 
 const readline = require('readline');
-//여기서 솔루션 코드를 처음부터 작성한다. return이 아닌 console.log(로 출력하는거 같다.)
+//여기서 솔루션 코드를 처음부터 작성한다. return이 아닌 console.log()로 출력하는거 같다.
 const solution = (word) => { console.log(word) }
 
 (async () => {
