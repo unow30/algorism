@@ -50,3 +50,26 @@ function solution2(n) {// 10
 }
 
 //6 '4' '24'
+//유효성 문제를 통과하지 못한 이유
+//중간에 console.log(answer)때문에 계산시간이 길어진 탓이다.
+//실제로 5억을 3으로 나누는 횟수를 count하면 700번 아래로 나타난다. 시간복잡도가 그리 크지 않다는 말이다.
+/*
+let divCounter = (num) => {
+    let i = 0;
+    let iNum = num;
+    while (iNum > 0) {
+        i++;
+        iNum = iNum / 3;
+    }
+    return i;
+}
+let maxCase = 500000000;
+console.log(divCounter(maxCase)) => 697이 나타난다.
+*/
+
+//한줄로 끝내는 방법
+function change124(n) {
+    return n === 0 ? '' : change124(parseInt((n - 1) / 3)) + [1, 2, 4][(n - 1) % 3];
+}
+
+//  console.log(change124(10));
