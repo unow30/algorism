@@ -8,7 +8,8 @@
 >
 >이 행렬에 (2, 2, 5, 4) 회전을 적용하면, 아래 그림과 같이 2행 2열부터 5행 4열까지 영역의 테두리가 시계방향으로 회전합니다. 이때, 중앙의 15와 21이 있는 영역은 회전하지 않는 것을 주의하세요.
 >
-rotation_example.png
+![](https://github.com/unow30/algorism/blob/master/2104/210403/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202021-04-04%20155909.png)
+![](https://github.com/unow30/algorism/blob/master/2104/210403/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202021-04-04%20160314.png)
 >
 >행렬의 세로 길이(행 개수) rows, 가로 길이(열 개수) columns, 그리고 회전들의 목록 queries가 주어질 때, 각 회전들을 배열에 적용한 뒤, 그 회전에 의해 위치가 바뀐 숫자들 중 가장 작은 숫자들을 순서대로 배열에 담아 return 하도록 solution 함수를 완성해주세요.
 
