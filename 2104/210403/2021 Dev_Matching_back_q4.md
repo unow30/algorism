@@ -42,4 +42,4 @@
 > COUNT(HOST_ID)>1인 HOTS_ID, COUNT(HOST_ID) 칼럼을 갖는 테이블을 서브쿼리로 생성한 다음
  PLACES 테이블과 조인하면 된다.
 
- ![SELECT * FROM PLACES;](2104\210403\화면 캡처 2021-04-04 144916.png)
+ ![SELECT * FROM PLACES;](..\화면 캡처 2021-04-04 144916.png)
