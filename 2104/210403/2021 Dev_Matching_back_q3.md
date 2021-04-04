@@ -73,3 +73,9 @@
 
 ### 입출력 예 #2
 문제에 주어진 예시와 동일한 조직 구성에 조금 다른 판매량 집계를 적용한 것입니다. 이익을 분배하는 규칙이 동일하므로, 간단한 계산에 의하여 표에 보인 결과를 얻을 수 있습니다.
+
+```js
+function solution(enroll, referral, seller, amount) {
+    return result
+}
+```

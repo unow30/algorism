@@ -46,3 +46,9 @@ example2.png
 입출력 예 #3
 >
 이 예시에서는 행렬의 테두리에 위치한 모든 칸들이 움직입니다. 따라서, 행렬의 테두리에 있는 수 중 가장 작은 숫자인 1이 바로 답이 됩니다.
+
+```js
+function solution(rows, columns, queries) {
+    return result
+}
+```
