@@ -42,4 +42,15 @@
 > COUNT(HOST_ID)>1인 HOTS_ID, COUNT(HOST_ID) 칼럼을 갖는 테이블을 서브쿼리로 생성한 다음
  PLACES 테이블과 조인하면 된다.
 
- ![](./화면 캡처 2021-04-04 144916.png)
+1. SELECT * FROM PLACES;
+
+>![](https://github.com/unow30/algorism/blob/master/2104/210403/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202021-04-04%20144916.png)
+ 
+2. 테이블에서 HOST_ID, COUNT(HOST_ID) 열을 SELECT하는데, HOST_ID별로 GROUP BY한 다음 COUNT(HOST_ID) > 1 이상인 데이터만 불러온다.
+
+>![](https://github.com/unow30/algorism/blob/master/2104/210403/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202021-04-04%20150342.png)
+
+3. 위에서 불러온 테이블을 PLACES 테이블과 INNER JOIN한다.
+
+>![](https://github.com/unow30/algorism/blob/master/2104/210403/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202021-04-04%20150423.png)
+ 
