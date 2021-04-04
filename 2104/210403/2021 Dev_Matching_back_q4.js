@@ -27,4 +27,10 @@
  |30900122|
  - 이 값을 서브쿼리로 활용한다면? WHERE HOST_ID IN (SELECT HOST_ID FROM PLACES GROUP BY HOST_ID HAVING COUNT(HOST_ID) > 1)
  서브쿼리에 있는 칼럼 값이 IN에 맞물려서 WHERE 조건의 데이터를 불러오지 않을까?
+
+
+
+
+ 풀이: COUNT(HOST_ID)>1인 HOTS_ID, COUNT(HOST_ID) 칼럼을 갖는 테이블을 서브쿼리로 생성한 다음
+ PLACES 테이블과 조인하면 된다.
 */
