@@ -25,8 +25,8 @@ function socar(num, times) {
     //도착시간은 떠나는 시간들보다 작아야 하고
     //떠나는시간은 도착 시간보다 커야 한다.
 
-    Math.max.apply(null, arriveTime)
-    Math.min.apply(null, leaveTime)
+    console.log(Math.max.apply(null, arriveTime))
+    console.log(Math.min.apply(null, leaveTime))
 }
 // 09:00 10:00 08:00
 // 10:00 12:00 12:00
