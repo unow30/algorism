@@ -28,6 +28,8 @@ function solution(v) {
     return answer;
 }
 ```
+
+```js
 /*   3,10
 .+   +
 .1,10   
@@ -78,3 +80,4 @@ function solution(v) {
 }
 solution([[1, 4], [3, 4], [3, 10]])
 solution([[1, 1], [2, 2], [1, 2]])
+```
