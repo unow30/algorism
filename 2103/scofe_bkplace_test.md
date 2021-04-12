@@ -1,5 +1,5 @@
 
-## 상품 배치 추천
+## 상품 배치 추천()
 
 ### 문제 설명
   > 최근 버킷플레이스에서는 '오늘의 집'마이페이지에 사용자의 공간 정보를 올리면 각 공간에 대한 상품 추천 기능을 만들고자 한다.
@@ -69,29 +69,4 @@ const readline = require('readline');
 	process.exit();
 })();
 
-```
-```js
-function mkcurly(length, route) {
-    let arr = String(route).split("").map(el => Number(el))
-    // console.log(length)
-    // console.log(arr)
-    let count = 0;
-    let aux = (arr, idx) => {
-
-        if (idx === length - 1) { count++ }
-        if (arr[idx] === 1) {
-            aux(arr, (idx + 1))
-            aux(arr, (idx + 2))
-        } else {
-            return
-        }
-    }
-    aux(arr, 0)
-
-    console.log(count)
-}
-
-// mkcurly(4, 1111)
-// mkcurly(4, 1101)
-mkcurly(5, 11111)
 ```
