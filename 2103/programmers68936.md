@@ -27,6 +27,12 @@ arr이 매개변수로 주어집니다. 위와 같은 방식으로 arr을 압축
 */
 ```js
 function solution(arr) {
+    var answer = [];
+    return answer;
+}
+```
+```js
+function solution(arr) {
 
     //2차원 배열의 행과 열의 시작점, 끝점을 찾는다.
     //2차원 배열을 사분하기 위한 행과 열의 중간점을 찾는다.
@@ -76,10 +82,4 @@ solution([
     [0, 0, 0, 0, 0, 0, 0, 1],
     [0, 0, 0, 0, 1, 0, 0, 1],
     [0, 0, 0, 0, 1, 1, 1, 1]])//[ 31, 33 ]
-```
-```js
-function solution(arr) {
-    var answer = [];
-    return answer;
-}
 ```
