@@ -1,4 +1,4 @@
-/*
+
 ## 쿼드압축 후 개수 세기
 
 ### 문제 설명
@@ -24,7 +24,6 @@ arr이 매개변수로 주어집니다. 위와 같은 방식으로 arr을 압축
 ![](https://images.velog.io/images/unow30/post/05b4c0db-b1ac-4bef-ba85-6a59315ad6bc/image.png)
 ![](https://images.velog.io/images/unow30/post/de3a66b1-c214-40ed-b6b2-07cca33a14ff/image.png)
 
-*/
 ```js
 function solution(arr) {
     var answer = [];
