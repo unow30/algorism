@@ -34,8 +34,18 @@ function solution(numbers, target) {
 
         return aux(idx + 1, cur + numbers[idx]) + aux(idx + 1, cur - numbers[idx])
     }
-
-
     return aux(0, 0);
 }
 ```
+>dfs문제로 풀었다. numbers의 요소 하나하나에 +와 -를 붙여서 재귀했다.
+ ```js
+aux("인덱스번호 0 +1", "시작값(0) + number[0]") + aux("인덱스번호0 +1", "시작값(0) - number[0]")
+ ```
+ bfs로도 풀고 싶은데 방법이 없을까
+ +와 -가 생기는 경우의 수를 매트릭스로 만드는 방법은?
+ [1,2,3]일때 +-의 배치 경우의 수는 8개? 동전던지기와 같다? 2^3승 8개
+ +++ ++- +-- ---
+     +-+ -+-
+     -++ --+
+ 
+  

@@ -41,9 +41,7 @@ class Song {
    */
   isRepeatingPlaylist() {
     // Your code goes here
-//    console.log(first.nextSong)
- //   console.log(second.nextSong)
-//   console.log(Object.values(this))
+
  if(first.nextSong == second && second.nextSong == first){
    return true
  }
