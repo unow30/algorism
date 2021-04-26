@@ -30,8 +30,8 @@ function connectedVertices(edges) {
             [1,0,0,0,0,0], row 1은 col 0과 연결되어있다.[1,0]
             [0,0,0,1,0,0], row 2는 col 3과 연결되어있다.[2,3]
             [0,0,1,0,1,1],...
-            [0,0,0,1,0,1],...
-            [0,0,0,0,1,0]...
+            [0,0,0,1,0,0],...
+            [0,0,0,1,0,0]...
         ]
     */
     for (let e = 0; e < edges.length; e++) {
@@ -46,10 +46,10 @@ function connectedVertices(edges) {
         const deQ = Q => Q.shift();
 
         // 시작점을 하나 넣고 시작함.
-        const Q = [start];
-        isVisited[start] = true;//[t,f,f,f,f]
+        const Q = [start];//[0]
+        isVisited[start] = true;//[t,f,f,f,f,f]
         while (isEmpty(Q) === false) {
-            const now = deQ(Q); // 1
+            const now = deQ(Q); // 0
             // now로부터 할 수 있는 선택, 방향, 옵션 => 루프
             for (let col = 0; col < C; col++) {
                 //방문하지 않은 row이고, 지정한 매트릭스의 행열이 1일 경우
@@ -57,6 +57,7 @@ function connectedVertices(edges) {
                 if (isVisited[col] === false && matrix[now][col] === 1) {
                     enQ(Q, col);
                     isVisited[col] = true
+                    console.log(`isVisited=${isVisited}`)
                 }
             }
         }
@@ -64,10 +65,11 @@ function connectedVertices(edges) {
 
     let cnt = 0;
     const isVisited = Array(N).fill(false);
-    for (let i = 0; i <= N; i++) {
+    for (let i = 0; i < N; i++) {
         if (isVisited[i] === false) {
             bfs(i, isVisited)
             cnt++
+            console.log(`cnt:${cnt}`)
         }
     }
 

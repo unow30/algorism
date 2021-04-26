@@ -68,7 +68,7 @@ function connectedVertices(edges) {
     const R = matrix.length;
     const C = matrix[0].length;
 
-    /*N = 5일 때, [[0,1],[2,3],[3,4],[3,5]] [3,5]는 matrix 외부
+    /*N = 5일 때, [[0,1],[2,3],[3,4],[3,5]] [3,5]는 matrix 내부
         [
             [0,1,0,0,0,0], row 0은 col 1과 연결되어있다.[0,1] 연결여부를 0,1로 표시
             [1,0,0,0,0,0], row 1은 col 0과 연결되어있다.[1,0]
@@ -105,7 +105,7 @@ function connectedVertices(edges) {
     }
 
     let cnt = 0;
-    const isVisited = Array(N).fill(false);
+    const isVisited = Array(N+1).fill(false);
     for (let i = 0; i <= N; i++) {
         if (isVisited[i] === false) {
             bfs(i, isVisited)
