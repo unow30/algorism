@@ -1,0 +1,56 @@
+<button id="add_input" type="button" value="">add_input</button>
+<div>
+  <div id="category_list"></div>
+
+  <div>
+    <input type="button" id="mix" value="mix" />
+  </div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"
+></script>
+<script>
+  let option_id = 1;
+
+  $("#add_input").on("click", () => {
+    // console.log(option_id);
+    console.log(option_id);
+    let res = `<div class="form_group">`;
+    res += `<input id="option_name${option_id}" type="text" placeholder="option_name${option_id}" value=""/>`;
+    res += `<input id="option_value${option_id}" type="text" placeholder="option_value${option_id}" value=""/>`;
+    res += `<button id="delete_input" type="button" value="">delete</button><br/></div>`;
+
+    $("#category_list").append(res);
+    option_id++;
+    // console.log($("#category_list").children());
+  });
+
+  $("#delete_input").on("click", () => {});
+
+  $("#mix").on("click", () => {
+    let obj = {};
+
+    // let option_value = $("#option_value1").val();
+    // let option_name = $("#option_name1").val();
+    let option_list = $("#category_list").children();
+
+    if (option_list.length <= 0) {
+      alert("fill input value");
+      return;
+    }
+    console.log($("#option_name2").text());
+    for (let i = 1; i <= option_list.length; i++) {
+      let main_arr = [];
+      let option_name = $("#option_name" + i).val(); //option_name1 색상
+      let option_value = $("#option_value" + i).val(); //option_value1 레드, 블루, 그린
+      option_value = option_value.replace(/(^\s*)|(\s*$)/g, "");
+      option_value = option_value.replace(/, */g, ",").split(",");
+      main_arr.push(option_value);
+      obj[option_name] = main_arr;
+    }
+    console.log(obj);
+  });
+</script>
